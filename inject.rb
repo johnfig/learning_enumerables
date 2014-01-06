@@ -1,4 +1,4 @@
-# Inject is awesome because it allows you to have one line of code have 
+d# Inject is awesome because it allows you to have one line of code have 
 # totals of sums, products, divisors, etc. 
 
 #------------------------------------------------
