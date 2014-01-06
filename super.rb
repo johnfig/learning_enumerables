@@ -21,7 +21,7 @@ class OldGuy
 end
 
 class NewGuy < OldGuy
-	attr_writer :name, :age
+	attr_accessor :name, :age
 
 	def show_age
 		super
@@ -43,4 +43,4 @@ old_guy.show_age
 new_guy = NewGuy.new("Steve", 18)
 new_guy.show_name
 new_guy.show_all
-
+p new_guy.age

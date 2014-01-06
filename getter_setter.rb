@@ -3,30 +3,42 @@
 
 # Hard
 class Brain
-	# setter
-  def thought=(thought)
-    @thought = thought
-  end
+	# create or new
+	def initialize(thought)
+		@thought = thought
+	end
 
-  # getter
-  def thought
-    @thought
-  end
+	# getter
+	def thought
+		@thought
+	end
+
+	# setter
+	def thought=(thought)
+		@thought = thought
+	end
 end
 
-brain = Brain.new
-brain.thought = "Awesome"
+brain = Brain.new("On My Mind")
+puts brain.thought
+brain.thought = "Success, Happiness, Driven"
 puts brain.thought
 
-# Easier
-class Brain
+puts ''
+
+# EASIEST!
+class BrainTwo
+	# getter and setter methods
+	attr_accessor :thought
+
+	# create or new
 	def initialize(thought)
 		@thought = thought
 	end
 end
 
-# EASIEST!
-class Brain
-	attr_accessor :thought
-end
+brain_two = BrainTwo.new("Rock Star")
+puts brain_two.thought
+brain_two.thought = "McJagger"
+puts brain_two.thought
 
