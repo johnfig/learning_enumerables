@@ -4,7 +4,7 @@
 def longest_improvement(array)
   longest_count = 0
   array.each do |x|
-    
+    puts x
   end
 end
 
